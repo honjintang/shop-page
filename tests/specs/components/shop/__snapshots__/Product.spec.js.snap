@@ -23,8 +23,10 @@ exports[`components/shop/Product matches snapshot renders image with title, bran
         mockSize
       </p>
       <p>
-        Price: £
-        mockPrice
+        <b>
+          Price: £
+          mockPrice
+        </b>
       </p>
     </CardText>
   </CardBody>
@@ -54,8 +56,10 @@ exports[`components/shop/Product matches snapshot when brand is not present rend
         mockSize
       </p>
       <p>
-        Price: £
-        mockPrice
+        <b>
+          Price: £
+          mockPrice
+        </b>
       </p>
     </CardText>
   </CardBody>
@@ -90,8 +94,10 @@ exports[`components/shop/Product matches snapshot when product is sold renders w
         mockSize
       </p>
       <p>
-        Price: £
-        mockPrice
+        <b>
+          Price: £
+          mockPrice
+        </b>
       </p>
     </CardText>
   </CardBody>

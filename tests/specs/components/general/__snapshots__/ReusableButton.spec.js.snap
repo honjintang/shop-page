@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/general/ReusableButton matches snapshot 1`] = `
+<Button
+  active={false}
+  disabled={false}
+  id="mockId"
+  type="button"
+  variant="outline-light"
+>
+  button label
+</Button>
+`;

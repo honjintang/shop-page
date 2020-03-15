@@ -14,3 +14,4 @@ const products = (state=DEFAULT_STATE, action) => {
 export default products
 
 export const getAllProducts = state => state.products
+export const getUnsoldProducts = state => state.products.filter(product => !product.sold)

@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/shop/HideSold matches snapshot 1`] = `
+<ReusableButton
+  active={false}
+  id="hide-show"
+  label="Hide Sold Items"
+  onClick={[Function]}
+/>
+`;

@@ -1,8 +1,8 @@
 import * as ACTIONS from '~/actions'
-import productsReducer, { DEFAULT_STATE } from '~/reducers/products'
+import productsReducer, { DEFAULT_STATE, getAllProducts, getUnsoldProducts } from '~/reducers/products'
 
 describe('testing: reducers/products', () => {
-  const mockProducts = [{ id: 'mock_id_1', title: 'mock_title_1' }, { id: 'mock_id_2', title: 'mock_title_2' }]
+  const mockProducts = [{ id: 'mock_id_1', title: 'mock_title_1', sold: true }, { id: 'mock_id_2', title: 'mock_title_2', sold: false }]
   let result
   
   describe('when no state provided', () => {
@@ -26,5 +26,21 @@ describe('testing: reducers/products', () => {
       const newState = 
       expect(result).toEqual(mockProducts)
     })
+  })
+
+    describe('selectors', () => {
+      describe('#getAllProducts', () => {
+          it('returns all products', () => {
+              const mockState = { products: mockProducts}
+              expect(getAllProducts(mockState)).toBe(mockProducts)
+          })
+      })
+
+      describe('#getUnsoldProducts', () => {
+          it('returns unsold products only', () => {
+              const mockState = { products: mockProducts}
+              expect(getUnsoldProducts(mockState)).toEqual([{ id: 'mock_id_2', title: 'mock_title_2', sold: false }])
+          })
+      })
   })
 })

@@ -1,12 +1,12 @@
 import React from 'react'
-import Feed from '~/components/shop/Feed'
 import Card from 'react-bootstrap/Card'
+import Feed from '~/components/shop/Feed'
+import HideSold from '~/components/shop/HideSold'
 
 const App = () => (
     <>
-        <Card.Header>
             <h1>Viv's Vintage Shop</h1>
-        </Card.Header >
+            <HideSold />
         <Feed />
     </>
 )

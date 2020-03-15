@@ -3,7 +3,8 @@ import { connect } from 'react-redux'
 import CardColumns from 'react-bootstrap/CardColumns'
 import Product from '~/components/shop/Product'
 import { getProducts } from '~/actions'
-import { getAllProducts } from '~/reducers/products'
+import { getAllProducts, getUnsoldProducts } from '~/reducers/products'
+import { isShowingSoldItems } from '~/reducers/display'
 
 export const Feed = props => {
     const { products, getProducts } = props
@@ -22,8 +23,8 @@ export const Feed = props => {
     )
 }
 
-const mapStateToProps = state => ({
-    products: getAllProducts(state),
+export const mapStateToProps = state => ({
+    products: isShowingSoldItems(state) ? getAllProducts(state) : getUnsoldProducts(state),
 })
 
 const mapDispatchToProps = {
