@@ -40,7 +40,9 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "enzyme-to-json": "^3.4.4",
+    "file-loader": "^5.1.0",
     "html-webpack-plugin": "^3.2.0",
+    "identity-obj-proxy": "^3.0.0",
     "image-webpack-loader": "^4.6.0",
     "jest": "^24.9.0",
     "jquery": "^3.4.1",
@@ -60,7 +62,7 @@
     ],
     "moduleNameMapper": {
       "~/(.*)$": "<rootDir>/js/$1",
-      "\\.(jpg|jpeg|png|gif)$": "<rootDir>/tests/__mocks__/fileMock.js",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/tests/__mocks__/fileMock.js",
       "\\.(css|scss)$": "identity-obj-proxy"
     },
     "snapshotSerializers": [

@@ -9,6 +9,18 @@ exports[`components/shop/Product matches snapshot renders image with title, bran
     className={null}
     variant="top"
   />
+  <CardImgOverlay>
+    <CardTitle
+      className="like"
+    >
+      <img
+        className="heart"
+        height="22.5px"
+        src="test-file-stub"
+        width="22.5px"
+      />
+    </CardTitle>
+  </CardImgOverlay>
   <CardBody>
     <CardTitle>
       mockTitle
@@ -42,6 +54,18 @@ exports[`components/shop/Product matches snapshot when brand is not present rend
     className={null}
     variant="top"
   />
+  <CardImgOverlay>
+    <CardTitle
+      className="like"
+    >
+      <img
+        className="heart"
+        height="22.5px"
+        src="test-file-stub"
+        width="22.5px"
+      />
+    </CardTitle>
+  </CardImgOverlay>
   <CardBody>
     <CardTitle>
       mockTitle
@@ -78,6 +102,18 @@ exports[`components/shop/Product matches snapshot when product is sold renders w
   <CardImgOverlay>
     <CardTitle>
       SOLD
+    </CardTitle>
+  </CardImgOverlay>
+  <CardImgOverlay>
+    <CardTitle
+      className="like"
+    >
+      <img
+        className="heart"
+        height="22.5px"
+        src="test-file-stub"
+        width="22.5px"
+      />
     </CardTitle>
   </CardImgOverlay>
   <CardBody>
