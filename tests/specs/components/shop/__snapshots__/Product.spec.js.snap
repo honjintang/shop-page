@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/shop/Product matches snapshot renders image with title, brand, size and price 1`] = `
+<Card
+  body={false}
+  id="mockId"
+>
+  <CardImg
+    variant="top"
+  />
+  <CardBody>
+    <CardTitle>
+      mockTitle
+    </CardTitle>
+    <CardText>
+      <p>
+        Brand: 
+        mockBrand
+      </p>
+      <p>
+        Size: 
+        mockSize
+      </p>
+      <p>
+        Price: £
+        mockPrice
+      </p>
+    </CardText>
+  </CardBody>
+</Card>
+`;
+
+exports[`components/shop/Product matches snapshot when brand is not present renders default N/A 1`] = `
+<Card
+  body={false}
+  id="mockId"
+>
+  <CardImg
+    variant="top"
+  />
+  <CardBody>
+    <CardTitle>
+      mockTitle
+    </CardTitle>
+    <CardText>
+      <p>
+        Brand: 
+        N/A
+      </p>
+      <p>
+        Size: 
+        mockSize
+      </p>
+      <p>
+        Price: £
+        mockPrice
+      </p>
+    </CardText>
+  </CardBody>
+</Card>
+`;

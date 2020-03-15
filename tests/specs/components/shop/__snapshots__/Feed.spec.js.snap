@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/shop/Feed renders all products 1`] = `
+<Fragment>
+  <CardColumns>
+    <Product
+      id="mock_id_1"
+      key="mock_id_1"
+      title="mock_title_1"
+    />
+    <Product
+      id="mock_id_2"
+      key="mock_id_2"
+      title="mock_title_2"
+    />
+  </CardColumns>
+</Fragment>
+`;

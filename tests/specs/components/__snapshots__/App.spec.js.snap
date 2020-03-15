@@ -2,9 +2,11 @@
 
 exports[`components/App matches snapshot 1`] = `
 <Fragment>
-  <h1>
-    hello
-  </h1>
+  <CardHeader>
+    <h1>
+      Viv's Vintage Shop
+    </h1>
+  </CardHeader>
   <Connect(Feed) />
 </Fragment>
 `;

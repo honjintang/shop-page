@@ -1,8 +1,8 @@
 import React from 'react'
 import { shallow } from 'enzyme'
-import { Feed } from '~/components/views/Feed'
+import { Feed } from '~/components/shop/Feed'
 
-describe('components/views/Feed', () => {
+describe('components/shop/Feed', () => {
     const mockGetProducts= jest.fn()
     const mockProducts = [{ id: 'mock_id_1', title: 'mock_title_1' }, { id: 'mock_id_2', title: 'mock_title_2' }]
     let useEffect

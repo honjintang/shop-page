@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import Card from 'react-bootstrap/Card'
+import CardColumns from 'react-bootstrap/CardColumns'
+import Product from '~/components/shop/Product'
 import { getProducts } from '~/actions'
 import { getAllProducts } from '~/reducers/products'
 
@@ -13,9 +14,9 @@ export const Feed = props => {
     return  (
         <>
             {products &&
-                <Card.Header>
-                    <h1>products</h1>
-                </Card.Header>
+                <CardColumns>
+                    {products.map(p => <Product key={p.id} {...p} />)}
+                </CardColumns>
             }
         </>
     )
