@@ -13,6 +13,17 @@ describe('components/shop/Product', () => {
                 brand='mockBrand'
                 size='mockSize'
                 price='mockPrice'
+                sold={false}
+                 />)
+            expect(component).toMatchSnapshot()
+        })
+
+        it('when product is sold renders with overlay', () => {
+            component = shallow(<Product 
+                id='mockId'
+                title='mockTitle'
+                size='mockSize'
+                price='mockPrice'
                 sold={true}
                  />)
             expect(component).toMatchSnapshot()
@@ -24,7 +35,7 @@ describe('components/shop/Product', () => {
                 title='mockTitle'
                 size='mockSize'
                 price='mockPrice'
-                sold={true}
+                sold={false}
                  />)
             expect(component).toMatchSnapshot()
         })

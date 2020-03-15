@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Card from 'react-bootstrap/Card'
 
-const Product = ({id, img, title, brand, price, size, sold }) => (
+const Product = ({id, img, title, brand, price, size, sold }) => {
+    return (
         <Card id={id}>
-            <Card.Img variant="top" src={img} />
+            <Card.Img className={sold ? 'card-img-sold' : null} variant="top" src={img} />
+            {sold && <Card.ImgOverlay>
+                <Card.Title>SOLD</Card.Title>
+            </Card.ImgOverlay>}
             <Card.Body>
             <Card.Title>{title}</Card.Title>
             <Card.Text>
@@ -13,6 +17,7 @@ const Product = ({id, img, title, brand, price, size, sold }) => (
             </Card.Text>
             </Card.Body>
         </Card>
-)
+    )
+} 
 
 export default Product

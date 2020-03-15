@@ -6,6 +6,7 @@ exports[`components/shop/Product matches snapshot renders image with title, bran
   id="mockId"
 >
   <CardImg
+    className={null}
     variant="top"
   />
   <CardBody>
@@ -36,8 +37,45 @@ exports[`components/shop/Product matches snapshot when brand is not present rend
   id="mockId"
 >
   <CardImg
+    className={null}
     variant="top"
   />
+  <CardBody>
+    <CardTitle>
+      mockTitle
+    </CardTitle>
+    <CardText>
+      <p>
+        Brand: 
+        N/A
+      </p>
+      <p>
+        Size: 
+        mockSize
+      </p>
+      <p>
+        Price: £
+        mockPrice
+      </p>
+    </CardText>
+  </CardBody>
+</Card>
+`;
+
+exports[`components/shop/Product matches snapshot when product is sold renders with overlay 1`] = `
+<Card
+  body={false}
+  id="mockId"
+>
+  <CardImg
+    className="card-img-sold"
+    variant="top"
+  />
+  <CardImgOverlay>
+    <CardTitle>
+      SOLD
+    </CardTitle>
+  </CardImgOverlay>
   <CardBody>
     <CardTitle>
       mockTitle
