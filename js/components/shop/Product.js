@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Card from 'react-bootstrap/Card'
-import heart from '../../../assets/images/heart-outline.svg'
+import heartOutline from '../../../assets/images/heart-outline.svg'
+import blackHeart from '../../../assets/images/blackHeart.svg'
 
 const Product = ({id, img, title, brand, price, size, sold }) => {
+    const [ liked, setLiked ] = useState(false)
+
     return (
         <Card id={id}>
             <Card.Img className={sold ? 'card-img-sold' : null} variant="top" src={img} />
@@ -11,7 +14,20 @@ const Product = ({id, img, title, brand, price, size, sold }) => {
             </Card.ImgOverlay>}
             {<Card.ImgOverlay>
                 <Card.Title className='like'>
-                    <img className='heart' src={heart} width="22.5px" height="22.5px"/>
+                    {liked ? 
+                    <img 
+                        onClick={() => setLiked(!liked)}
+                        src={blackHeart} 
+                        width="22.5px" 
+                        height="22.5px"
+                    /> :
+                    <img 
+                        onClick={() => setLiked(!liked)}
+                        src={heartOutline} 
+                        width="22.5px" 
+                        height="22.5px"
+                    />
+                }
                 </Card.Title>
             </Card.ImgOverlay>}
             <Card.Body>
