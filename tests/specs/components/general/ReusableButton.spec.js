@@ -10,7 +10,7 @@ describe('components/general/ReusableButton', () => {
         component = shallow(<ReusableButton 
                 id='mockId'
                 label='button label'
-                onChange={mockFn}
+                onClick={() => {}}
                 active={false}
                  />)
             expect(component).toMatchSnapshot()

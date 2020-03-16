@@ -3,10 +3,11 @@
 exports[`components/shop/Product matches snapshot renders image with title, brand, size and price 1`] = `
 <Card
   body={false}
-  id="mockId"
+  id={1}
 >
   <CardImg
     className={null}
+    src="mockImg"
     variant="top"
   />
   <CardImgOverlay>
@@ -14,10 +15,8 @@ exports[`components/shop/Product matches snapshot renders image with title, bran
       className="like"
     >
       <img
-        className="heart"
-        height="22.5px"
+        onClick={[Function]}
         src="test-file-stub"
-        width="22.5px"
       />
     </CardTitle>
   </CardImgOverlay>
@@ -26,20 +25,20 @@ exports[`components/shop/Product matches snapshot renders image with title, bran
       mockTitle
     </CardTitle>
     <CardText>
-      <p>
+      <span>
         Brand: 
         mockBrand
-      </p>
-      <p>
+      </span>
+      <span>
         Size: 
         mockSize
-      </p>
-      <p>
+      </span>
+      <span>
         <b>
           Price: £
-          mockPrice
+          20
         </b>
-      </p>
+      </span>
     </CardText>
   </CardBody>
 </Card>
@@ -48,10 +47,11 @@ exports[`components/shop/Product matches snapshot renders image with title, bran
 exports[`components/shop/Product matches snapshot when brand is not present renders default N/A 1`] = `
 <Card
   body={false}
-  id="mockId"
+  id={1}
 >
   <CardImg
     className={null}
+    src="mockImg"
     variant="top"
   />
   <CardImgOverlay>
@@ -59,10 +59,8 @@ exports[`components/shop/Product matches snapshot when brand is not present rend
       className="like"
     >
       <img
-        className="heart"
-        height="22.5px"
+        onClick={[Function]}
         src="test-file-stub"
-        width="22.5px"
       />
     </CardTitle>
   </CardImgOverlay>
@@ -71,20 +69,20 @@ exports[`components/shop/Product matches snapshot when brand is not present rend
       mockTitle
     </CardTitle>
     <CardText>
-      <p>
+      <span>
         Brand: 
         N/A
-      </p>
-      <p>
+      </span>
+      <span>
         Size: 
         mockSize
-      </p>
-      <p>
+      </span>
+      <span>
         <b>
           Price: £
-          mockPrice
+          20
         </b>
-      </p>
+      </span>
     </CardText>
   </CardBody>
 </Card>
@@ -93,10 +91,11 @@ exports[`components/shop/Product matches snapshot when brand is not present rend
 exports[`components/shop/Product matches snapshot when product is sold renders with overlay 1`] = `
 <Card
   body={false}
-  id="mockId"
+  id={1}
 >
   <CardImg
     className="card-img-sold"
+    src="mockImg"
     variant="top"
   />
   <CardImgOverlay>
@@ -109,10 +108,8 @@ exports[`components/shop/Product matches snapshot when product is sold renders w
       className="like"
     >
       <img
-        className="heart"
-        height="22.5px"
+        onClick={[Function]}
         src="test-file-stub"
-        width="22.5px"
       />
     </CardTitle>
   </CardImgOverlay>
@@ -121,20 +118,20 @@ exports[`components/shop/Product matches snapshot when product is sold renders w
       mockTitle
     </CardTitle>
     <CardText>
-      <p>
+      <span>
         Brand: 
-        N/A
-      </p>
-      <p>
+        mockBrand
+      </span>
+      <span>
         Size: 
         mockSize
-      </p>
-      <p>
+      </span>
+      <span>
         <b>
           Price: £
-          mockPrice
+          20
         </b>
-      </p>
+      </span>
     </CardText>
   </CardBody>
 </Card>

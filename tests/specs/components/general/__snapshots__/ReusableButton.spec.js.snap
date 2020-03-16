@@ -5,6 +5,7 @@ exports[`components/general/ReusableButton matches snapshot 1`] = `
   active={false}
   disabled={false}
   id="mockId"
+  onClick={[Function]}
   type="button"
   variant="outline-light"
 >

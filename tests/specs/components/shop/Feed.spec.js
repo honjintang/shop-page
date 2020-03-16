@@ -15,7 +15,8 @@ jest.mock('~/reducers/products', () => ({
 
 describe('components/shop/Feed', () => {
     const mockGetProducts= jest.fn()
-    const mockProducts = [{ id: 'mock_id_1', title: 'mock_title_1' }, { id: 'mock_id_2', title: 'mock_title_2' }]
+    const mockProducts = [{ id: 1, img: 'mock_img_1', title: 'mock_title_1', price: 20, size: 'S', sold: true }, 
+        { id: 2, img: 'mock_img_2', title: 'mock_title_2', price: 30, size: 'M', sold: false }]
     let useEffect
     let component
 

@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import PropTypes from 'prop-types'
 import ReusableButton from '~/components/general/reusableButton'
 import { toggleSoldItems } from '~/actions'
 import { isShowingSoldItems } from '~/reducers/display'
@@ -23,6 +24,11 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = {
     toggleSoldItems,
+}
+
+HideSold.propTypes = {
+    toggleSoldItems: PropTypes.func.isRequired,
+    showSoldItems: PropTypes.bool.isRequired,
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(HideSold)
